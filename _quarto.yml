@@ -4,8 +4,8 @@ project:
 website: 
   page-navigation: true
   title: "Sharable documents with Quarto for ML and data science" 
-  site-url: "https://radned17.github.io/ml-projects/" 
-  repo-url: "https://github.com/radned17/ml-projects"
+  site-url: "https://rdned.github.io/ml-projects/" 
+  repo-url: "https://github.com/rdned/ml-projects"
   repo-actions: [edit, issue]
   
   page-footer:
@@ -21,7 +21,7 @@ website:
         href: https://www.iit.it/web/multiscale-brain-communication
         text: "multiscale-brain-communication"
       - icon: github
-        href: https://github.com/radned17/ml-projects
+        href: https://github.com/rdned/ml-projects
         text: "ML Projects GitHub"
       #- icon: twitter
       #  href: https://twitter.com/openscapes
