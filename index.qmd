@@ -1,0 +1,14 @@
+---
+title: "Influence of Art on Brain Activity"
+subtitle: "Machine Learning Tasks in the Scope of Stochastic Processes Analysis"
+---
+
+## Welcome {#welcome}
+
+This webpage is dedicated to an innovative research project exploring the profound influence of musical stimuli on brain activity. Specifically, we immerse participants in the experience of full-length lyric operas, harnessing their rich musical and narrative complexity to study how these masterpieces engage the human mind.
+
+We hypothesize that changes in skin temperature provide a reliable proxy for the impact of artistic stimuli on brain activity. Using a high-sensitivity thermocamera, we record videos of participants as they experience opera performances. These recordings allow us to track detailed facial heatmaps, capturing physiological responses over the duration of the performance.
+
+The goal of this project is to uncover how complete operatic works influence brain activity, helping us identify strong musical triggers and enabling a deeper understanding of the human brain. This research can unlock insights into the cognitive and emotional processes shaped by art and contribute to fields such as neuroscience, psychology, and personalized artistic engagement.
+
+The practical applications are wide-ranging. In healthcare, the findings may inspire personalized therapeutic interventions for conditions like stress, anxiety, and rehabilitation. In the realm of show business, they could inform the creation of immersive performances that maximize emotional resonance and audience engagement.

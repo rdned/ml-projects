@@ -1,0 +1,62 @@
+project: 
+  type: website
+  
+website: 
+  page-navigation: true
+  title: "Sharable documents with Quarto for ML and data science" 
+  site-url: "https://radned17.github.io/ml-projects/" 
+  repo-url: "https://github.com/radned17/ml-projects"
+  repo-actions: [edit, issue]
+  
+  page-footer:
+    right: "This page is built with [Quarto](https://quarto.org/)."
+    left: "&copy; CC-By Radim Nedbal, 2025"
+    
+  sidebar:
+    logo: "images/logo.png"
+    pinned: true
+    align: center
+    tools: 
+      - icon: globe
+        href: https://www.iit.it/web/multiscale-brain-communication
+        text: "multiscale-brain-communication"
+      - icon: github
+        href: https://github.com/radned17/ml-projects
+        text: "ML Projects GitHub"
+      #- icon: twitter
+      #  href: https://twitter.com/openscapes
+      #  text: "Openscapes Twitter"         
+
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
+      - href: index.qmd
+        text: Welcome
+      - section: Task proposals
+        contents: 
+          - href: project-proposals/face-tracking.md
+            text: Face tracking
+          - href: project-proposals/time-series-db.md
+            text: Time series DB
+          - href: project-proposals/vc-dimension.md
+            text: VC dimension
+          - href: project-proposals/time-series-modelling.md
+            text: Time series modelling
+          - href: project-proposals/explainable-dl.md
+            text: Explainable DL
+      #- python-example.ipynb    
+
+format:
+  html:
+    theme: cosmo
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+
+
+filters:
+  - include-files.lua
+  - quarto
+
+  
