@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-03-17">
+<meta name="dcterms.date" content="2025-03-18">
 
-<title>Face Tracking – Sharable documents with Quarto for ML and data science</title>
+<title>Time Series Database – Sharable documents with Quarto for ML and data science</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,17 +30,17 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../project-proposals/time-series-db.html" rel="next">
-<link href="../index.html" rel="prev">
+<link href="../project-proposals/vc-dimension.html" rel="next">
+<link href="../project-proposals/face-tracking.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-01bf821d34ede30856b0c0e7e2988940.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-748a278995d6d57df2b791b710aa6a63.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../project-proposals/face-tracking.html">Task proposals</a></li><li class="breadcrumb-item"><a href="../project-proposals/face-tracking.html">Face tracking</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../project-proposals/face-tracking.html">Task proposals</a></li><li class="breadcrumb-item"><a href="../project-proposals/time-series-db.html">Time series DB</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -100,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
       </a>
       <div class="sidebar-tools-main">
     <a href="https://www.iit.it/web/multiscale-brain-communication" title="multiscale-brain-communication" class="quarto-navigation-tool px-1" aria-label="multiscale-brain-communication"><i class="bi bi-globe"></i></a>
-    <a href="https://github.com/radned17/ml-projects" title="ML Projects GitHub" class="quarto-navigation-tool px-1" aria-label="ML Projects GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/rdned/ml-projects" title="ML Projects GitHub" class="quarto-navigation-tool px-1" aria-label="ML Projects GitHub"><i class="bi bi-github"></i></a>
 </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -127,13 +127,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../project-proposals/face-tracking.html" class="sidebar-item-text sidebar-link active">
+  <a href="../project-proposals/face-tracking.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Face tracking</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../project-proposals/time-series-db.html" class="sidebar-item-text sidebar-link">
+  <a href="../project-proposals/time-series-db.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Time series DB</span></a>
   </div>
 </li>
@@ -168,19 +168,16 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#problem-statement" id="toc-problem-statement" class="nav-link active" data-scroll-target="#problem-statement">Problem Statement</a></li>
-  <li><a href="#suggestions" id="toc-suggestions" class="nav-link" data-scroll-target="#suggestions">Suggestions</a>
-  <ul class="collapse">
-  <li><a href="#more-ambitious-ideas" id="toc-more-ambitious-ideas" class="nav-link" data-scroll-target="#more-ambitious-ideas">More ambitious ideas</a></li>
-  </ul></li>
+  <li><a href="#suggestions" id="toc-suggestions" class="nav-link" data-scroll-target="#suggestions">Suggestions</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/radned17/ml-projects/edit/main/project-proposals/face-tracking.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/radned17/ml-projects/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/rdned/ml-projects/edit/main/project-proposals/time-series-db.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdned/ml-projects/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../project-proposals/face-tracking.html">Task proposals</a></li><li class="breadcrumb-item"><a href="../project-proposals/face-tracking.html">Face tracking</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../project-proposals/face-tracking.html">Task proposals</a></li><li class="breadcrumb-item"><a href="../project-proposals/time-series-db.html">Time series DB</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Face Tracking</h1>
+<h1 class="title">Time Series Database</h1>
 </div>
 
 
@@ -191,7 +188,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 17, 2025</p>
+      <p class="date">March 18, 2025</p>
     </div>
   </div>
   
@@ -205,30 +202,21 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="problem-statement" class="level2">
 <h2 class="anchored" data-anchor-id="problem-statement">Problem Statement</h2>
-<p>This is a typical <em>computer vision</em> task. The goal is to improve the performance of the face tracking algorithm (see the video below). The algorithm is implemented in Python using OpenCV. Current version exploits thresholding <em>segmentation</em> and <em>tracking</em> based on simple features like energy and velocity vector.</p>
-<video width="640" height="480" controls="">
-<source src="../videos/track.mp4" type="video/mp4">
-<p>Your browser does not support the video tag. </p>
-</video></section>
+<p>We have data that represent videos of facial heatmaps. These data are time series of 2D matrices, the shape of which is a function of time. To store such data, we employ <a href="https://docs.timescale.com/self-hosted/latest/install/"><em>TimescaleDB</em></a>, which is an extension of <em>PostgreSQL</em>, a relational <em>DBMS</em> optimized for time-series data.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>We have developed an API to access the data. The API is implemented in Python using <em>Psycopg2</em> library, which is a popular PostgreSQL adapter for Python. The API allows needed <em>data manipulation</em> operations. In our pipeline, we retrieve the data from the database, and calculate other so-called <em>derived features</em> like <em>mean</em>, <em>standard deviation</em>, <em>skewness</em>, <em>kurtosis</em>, <em>normalized-size heatmaps</em>, <em>discrete 2D wavelet transform</em> etc. locally in Python.</p>
+</section>
 <section id="suggestions" class="level2">
 <h2 class="anchored" data-anchor-id="suggestions">Suggestions</h2>
-<p>One may consider other types of segmentation like edge-based segmentation. As for tracking, one may try a simple <em>SORT</em> algorithm using <em>Kalman filter</em>.</p>
-<section id="more-ambitious-ideas" class="level3">
-<h3 class="anchored" data-anchor-id="more-ambitious-ideas">More ambitious ideas</h3>
-<blockquote class="blockquote">
-<p>Super resolution and face normalization</p>
-</blockquote>
-<p>In ideal case, we would like to perform <a href="https://pyimagesearch.com/2017/05/22/face-alignment-with-opencv-and-python/"><em>face normalization</em></a>. However this is a very challenging task due to a very low resolution of our video data. We would need faces to be at least 60 x 90 pixels. To increase the resolution, we may consider using a <em>super-resolution</em> algorithm.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>We can define a more complex database schema that includes integrity constraints and triggers. The goal is to ensure data consistency and automate the calculation and storage of derived features within the DBMS. This approach eliminates the need to derive these features each time the ‘basic’ data is retrieved, enhancing efficiency and reliability.</p>
 
 
-</section>
 </section>
 
 
 <div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p>For example, <a href="https://learn.microsoft.com/en-us/azure/ai-services/openai/overview"><em>Azure OpenAI</em></a> can leverage models like GPT-4 and DALL-E to enhance the resolution of thermal images, making them clearer and more detailed.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>We could also consider using a different DB like <em>InfluxDB</em> or <em>Prometheus</em>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -321,7 +309,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/radned17\.github\.io\/ml-projects\/");
+      var filterRegex = new RegExp("https:\/\/rdned\.github\.io\/ml-projects\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -650,13 +638,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../index.html" class="pagination-link" aria-label="Welcome">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Welcome</span>
+      <a href="../project-proposals/face-tracking.html" class="pagination-link" aria-label="Face tracking">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Face tracking</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../project-proposals/time-series-db.html" class="pagination-link" aria-label="Time series DB">
-        <span class="nav-page-text">Time series DB</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../project-proposals/vc-dimension.html" class="pagination-link" aria-label="VC dimension">
+        <span class="nav-page-text">VC dimension</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -668,7 +656,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/radned17/ml-projects/edit/main/project-proposals/face-tracking.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/radned17/ml-projects/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rdned/ml-projects/edit/main/project-proposals/time-series-db.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdned/ml-projects/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

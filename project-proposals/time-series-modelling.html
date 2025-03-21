@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2025-03-18">
 
-<title>Vapnik–Chervonenkis Dimension – Sharable documents with Quarto for ML and data science</title>
+<title>Time Series Modelling – Sharable documents with Quarto for ML and data science</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,17 +30,17 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../project-proposals/time-series-modelling.html" rel="next">
-<link href="../project-proposals/time-series-db.html" rel="prev">
+<link href="../project-proposals/explainable-dl.html" rel="next">
+<link href="../project-proposals/vc-dimension.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-01bf821d34ede30856b0c0e7e2988940.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-748a278995d6d57df2b791b710aa6a63.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -81,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../project-proposals/face-tracking.html">Task proposals</a></li><li class="breadcrumb-item"><a href="../project-proposals/vc-dimension.html">VC dimension</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../project-proposals/face-tracking.html">Task proposals</a></li><li class="breadcrumb-item"><a href="../project-proposals/time-series-modelling.html">Time series modelling</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -100,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
       </a>
       <div class="sidebar-tools-main">
     <a href="https://www.iit.it/web/multiscale-brain-communication" title="multiscale-brain-communication" class="quarto-navigation-tool px-1" aria-label="multiscale-brain-communication"><i class="bi bi-globe"></i></a>
-    <a href="https://github.com/radned17/ml-projects" title="ML Projects GitHub" class="quarto-navigation-tool px-1" aria-label="ML Projects GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/rdned/ml-projects" title="ML Projects GitHub" class="quarto-navigation-tool px-1" aria-label="ML Projects GitHub"><i class="bi bi-github"></i></a>
 </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -139,13 +168,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../project-proposals/vc-dimension.html" class="sidebar-item-text sidebar-link active">
+  <a href="../project-proposals/vc-dimension.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">VC dimension</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../project-proposals/time-series-modelling.html" class="sidebar-item-text sidebar-link">
+  <a href="../project-proposals/time-series-modelling.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Time series modelling</span></a>
   </div>
 </li>
@@ -170,14 +199,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#problem-statement" id="toc-problem-statement" class="nav-link active" data-scroll-target="#problem-statement">Problem Statement</a></li>
   <li><a href="#suggestions" id="toc-suggestions" class="nav-link" data-scroll-target="#suggestions">Suggestions</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/radned17/ml-projects/edit/main/project-proposals/vc-dimension.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/radned17/ml-projects/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/rdned/ml-projects/edit/main/project-proposals/time-series-modelling.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdned/ml-projects/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../project-proposals/face-tracking.html">Task proposals</a></li><li class="breadcrumb-item"><a href="../project-proposals/vc-dimension.html">VC dimension</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../project-proposals/face-tracking.html">Task proposals</a></li><li class="breadcrumb-item"><a href="../project-proposals/time-series-modelling.html">Time series modelling</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Vapnik–Chervonenkis Dimension</h1>
+<h1 class="title">Time Series Modelling</h1>
 </div>
 
 
@@ -202,12 +231,13 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="problem-statement" class="level2">
 <h2 class="anchored" data-anchor-id="problem-statement">Problem Statement</h2>
-<p>We define a parametric space of stochastic processes<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> so that a <em>stochastic process realization</em> (<em>sample path</em>) is a result of a composition of a time vector function,<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> 1D wavelet transform on each chanel of the time vector function, and a (possibly) non-linear dimensionality reduction.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
-<p>In our project, the parametric space of stochastic processes plays the role of a <em>statistical classification model</em>. VC dimension of the model is important as it measures its capacity, which helps to estimate the model’s <em>generalization error</em>. The goal is to find a balance where the model is complex enough to capture the underlying patterns but not so complex that it overfits the data.</p>
+<p>We propose a hypothesis suggesting a <em>causal association</em> between two stochastic processes, each operating within its own distinct state space with differing dimensions. The first process involves thermocamera video capturing faces, while the second involves music recording.</p>
+<p>The aim is to estimate the intensity of the causal association by comparing the self-forecasting of the first process with its forecasting that also incorporates insights from the second process. If the latter demonstrates superior performance, it could indicate a causal association between the two processes.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 </section>
 <section id="suggestions" class="level2">
 <h2 class="anchored" data-anchor-id="suggestions">Suggestions</h2>
-<p>This task is challenging due to the complexity of the model. It requires a rigorous mathematical analysis, which involves proving whether a set of points can be shattered by the hypothesis space. This is non-trivial, and moreover, can be computationally very intensive!</p>
+<p>We suggest using a <em>long sequence time forecasting</em> model with a <em>transformer architecture</em>, which has proven effective in handling complex time dependencies in time series data. Specifically, <a href="https://huggingface.co/docs/transformers/model_doc/autoformer"><em>Autoformer</em></a> and <a href="https://huggingface.co/docs/transformers/model_doc/informer"><em>Informer</em></a> are hot candidates: they are both open source, available on <em>HuggingFace</em> Hub of Git-based repos, and can be relatively easily adapted to our needs.</p>
+<p>Note that causal inference assumes <em>unconfoundedness</em> of the two processes. In general, unconfoundedness is a strong assumption necessary for making causal inferences. However, in our case, it is a reasonable assumption, excluding hidden variables that significantly influence both processes. For example, a potential confounder could be tiredness if it strongly impacts both the opera director/singers/musicians and the audience. In such case, we would need to adjust for it, which is a standard approach in <em>causal inference from observational data</em>.</p>
 
 
 </section>
@@ -216,9 +246,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p>This function space is analogous to a feature encoding space in a supervised learning.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>A time vector function may be defined as a result of a discrete 2D wavelet transform applied to heatmap matrices in every time point<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>For example, a non-linear ICA implemented as <a href="https://cebra.ai"><em>CEBRA</em></a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>This is supported by <em>chain rule for entropy</em>: <span class="math inline">\(H(X)=I(X;Y)+H(X∣Y)\)</span>, and rests also on the assumption that an opera performance is highly unlikely to be influenced by its audience.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -311,7 +339,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/radned17\.github\.io\/ml-projects\/");
+      var filterRegex = new RegExp("https:\/\/rdned\.github\.io\/ml-projects\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -640,13 +668,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../project-proposals/time-series-db.html" class="pagination-link" aria-label="Time series DB">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Time series DB</span>
+      <a href="../project-proposals/vc-dimension.html" class="pagination-link" aria-label="VC dimension">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">VC dimension</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../project-proposals/time-series-modelling.html" class="pagination-link" aria-label="Time series modelling">
-        <span class="nav-page-text">Time series modelling</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../project-proposals/explainable-dl.html" class="pagination-link" aria-label="Explainable DL">
+        <span class="nav-page-text">Explainable DL</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -658,7 +686,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/radned17/ml-projects/edit/main/project-proposals/vc-dimension.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/radned17/ml-projects/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rdned/ml-projects/edit/main/project-proposals/time-series-modelling.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdned/ml-projects/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
