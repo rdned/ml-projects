@@ -19,6 +19,6 @@ Consider using the following techniques:
 
 2. Perturbation based methods to evaluate the robustness of the model's predictions. For example, perturb the input data and observe how the model's predictions change. This could help identify the most sensitive regions of the input data.
 
-3. Attention wights visualization to provide insights into which parts of the input the model is paying attention to.
+3. Attention weights visualization to provide insights into which parts of the input the model is paying attention to.
 
 4. Trend and Seasonal Decomposition: Autoformer model, for example, uses decomposition layers to separate trend and seasonal components. Visualizing these components can help understand how the model captures different aspects of the time-series data.
