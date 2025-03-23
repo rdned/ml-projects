@@ -1,59 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://rdned.github.io/ml-projects/learning-more.html</loc>
-    <lastmod>2025-03-23T01:15:07.727Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdned.github.io/ml-projects/project-proposals/vc-dimension.html</loc>
-    <lastmod>2025-03-23T01:15:07.727Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdned.github.io/ml-projects/project-proposals/explainable-dl.html</loc>
-    <lastmod>2025-03-23T01:15:07.727Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdned.github.io/ml-projects/explore.html</loc>
-    <lastmod>2025-03-23T01:15:07.702Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdned.github.io/ml-projects/quarto-workflows/jupyter.html</loc>
-    <lastmod>2025-03-23T01:15:07.758Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdned.github.io/ml-projects/quarto-workflows/browser.html</loc>
-    <lastmod>2025-03-23T01:15:07.728Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdned.github.io/ml-projects/transition-from-rmarkdown.html</loc>
-    <lastmod>2025-03-23T01:15:07.758Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdned.github.io/ml-projects/index.html</loc>
-    <lastmod>2025-03-23T01:15:07.726Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdned.github.io/ml-projects/quarto-workflows/index.html</loc>
-    <lastmod>2025-03-23T01:15:07.757Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdned.github.io/ml-projects/quarto-workflows/rstudio.html</loc>
-    <lastmod>2025-03-23T01:15:07.758Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdned.github.io/ml-projects/python-example.html</loc>
-    <lastmod>2025-03-23T01:15:07.727Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdned.github.io/ml-projects/project-proposals/face-tracking.html</loc>
-    <lastmod>2025-03-23T01:15:07.727Z</lastmod>
+    <loc>https://rdned.github.io/ml-projects/project-proposals/time-series-db.html</loc>
+    <lastmod>2025-03-23T01:25:39.100Z</lastmod>
   </url>
   <url>
     <loc>https://rdned.github.io/ml-projects/project-proposals/time-series-modelling.html</loc>
-    <lastmod>2025-03-23T01:15:07.727Z</lastmod>
+    <lastmod>2025-03-23T01:25:39.100Z</lastmod>
   </url>
   <url>
-    <loc>https://rdned.github.io/ml-projects/project-proposals/time-series-db.html</loc>
-    <lastmod>2025-03-23T01:15:07.727Z</lastmod>
+    <loc>https://rdned.github.io/ml-projects/project-proposals/face-tracking.html</loc>
+    <lastmod>2025-03-23T01:25:39.100Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdned.github.io/ml-projects/index.html</loc>
+    <lastmod>2025-03-23T01:25:39.100Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdned.github.io/ml-projects/python-example.html</loc>
+    <lastmod>2025-03-23T01:25:39.101Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdned.github.io/ml-projects/project-proposals/explainable-dl.html</loc>
+    <lastmod>2025-03-23T01:25:39.100Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdned.github.io/ml-projects/project-proposals/vc-dimension.html</loc>
+    <lastmod>2025-03-23T01:25:39.100Z</lastmod>
   </url>
 </urlset>
