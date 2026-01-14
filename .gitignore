@@ -9,3 +9,5 @@
 
 .DS_Store
 .python-version
+
+**/*.quarto_ipynb

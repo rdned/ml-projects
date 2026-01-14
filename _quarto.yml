@@ -1,6 +1,7 @@
-project: 
+project:
   type: website
-  
+  output-dir: _site
+
 website: 
   page-navigation: true
   title: "Sharable documents with Quarto for ML and data science" 
@@ -46,7 +47,10 @@ website:
           - href: project-proposals/explainable-dl.md
             text: Explainable DL
       #- python-example.ipynb    
-
+      - section: API Documentation
+        contents:
+          - href: docs/index.html
+            text: nbdev API
 format:
   html:
     theme: cosmo
