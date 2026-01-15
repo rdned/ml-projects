@@ -34,6 +34,8 @@ website:
     contents:
       - href: index.qmd
         text: Welcome
+      - href: Methodology.qmd  
+        text: Methodology overview
       - section: Task proposals
         contents: 
           - href: project-proposals/face-tracking.md
@@ -57,10 +59,10 @@ format:
     code-copy: true
     code-overflow: wrap
     toc: true
-
-
+    css: mermaid-fix.css
+    mermaid:
+      output: svg
+      embed: true
 filters:
   - include-files.lua
   - quarto
-
-  

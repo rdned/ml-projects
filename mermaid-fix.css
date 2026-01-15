@@ -1,0 +1,24 @@
+/* Audience lane */
+.mermaid svg g[id^="AUDIENCE"] rect {
+  fill: #e8f4ff !important;
+}
+
+/* Audio lane */
+.mermaid svg g[id^="AUDIO"] rect {
+  fill: #e8ffe8 !important;
+}
+
+/* Model lane */
+.mermaid svg g[id^="MODEL"] rect {
+  fill: #fff9d6 !important;
+}
+
+/* XAI lane */
+.mermaid svg g[id^="XAI"] rect {
+  fill: #f7e8ff !important;
+}
+
+body {
+  border: 5px solid red !important;
+}
+
