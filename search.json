@@ -44,50 +44,6 @@
     ]
   },
   {
-    "objectID": "project-proposals/time-series-modelling.html",
-    "href": "project-proposals/time-series-modelling.html",
-    "title": "Time Series Modelling",
-    "section": "",
-    "text": "We propose a hypothesis suggesting a causal association between two stochastic processes, each operating within its own distinct state space with differing dimensions. The first process involves thermocamera video capturing faces, while the second involves music recording.\nThe aim is to estimate the intensity of the causal association by comparing the self-forecasting of the first process with its forecasting that also incorporates insights from the second process. If the latter demonstrates superior performance, it could indicate a causal association between the two processes.1",
-    "crumbs": [
-      "Task proposals",
-      "Time series modelling"
-    ]
-  },
-  {
-    "objectID": "project-proposals/time-series-modelling.html#problem-statement",
-    "href": "project-proposals/time-series-modelling.html#problem-statement",
-    "title": "Time Series Modelling",
-    "section": "",
-    "text": "We propose a hypothesis suggesting a causal association between two stochastic processes, each operating within its own distinct state space with differing dimensions. The first process involves thermocamera video capturing faces, while the second involves music recording.\nThe aim is to estimate the intensity of the causal association by comparing the self-forecasting of the first process with its forecasting that also incorporates insights from the second process. If the latter demonstrates superior performance, it could indicate a causal association between the two processes.1",
-    "crumbs": [
-      "Task proposals",
-      "Time series modelling"
-    ]
-  },
-  {
-    "objectID": "project-proposals/time-series-modelling.html#suggestions",
-    "href": "project-proposals/time-series-modelling.html#suggestions",
-    "title": "Time Series Modelling",
-    "section": "Suggestions",
-    "text": "Suggestions\nWe suggest using a long sequence time forecasting model with a transformer architecture, which has proven effective in handling complex time dependencies in time series data. Specifically, Autoformer and Informer are hot candidates: they are both open source, available on HuggingFace Hub of Git-based repos, and can be relatively easily adapted to our needs.\nNote that causal inference assumes unconfoundedness of the two processes. In general, unconfoundedness is a strong assumption necessary for making causal inferences. However, in our case, it is a reasonable assumption, excluding hidden variables that significantly influence both processes. For example, a potential confounder could be tiredness if it strongly impacts both the opera director/singers/musicians and the audience. In such case, we would need to adjust for it, which is a standard approach in causal inference from observational data.",
-    "crumbs": [
-      "Task proposals",
-      "Time series modelling"
-    ]
-  },
-  {
-    "objectID": "project-proposals/time-series-modelling.html#footnotes",
-    "href": "project-proposals/time-series-modelling.html#footnotes",
-    "title": "Time Series Modelling",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nThis is supported by chain rule for entropy: \\(H(X)=I(X;Y)+H(X∣Y)\\), and rests also on the assumption that an opera performance is highly unlikely to be influenced by its audience.↩︎",
-    "crumbs": [
-      "Task proposals",
-      "Time series modelling"
-    ]
-  },
-  {
     "objectID": "project-proposals/face-tracking.html",
     "href": "project-proposals/face-tracking.html",
     "title": "Face Tracking",
@@ -132,6 +88,61 @@
     ]
   },
   {
+    "objectID": "project-proposals/vc-dimension.html",
+    "href": "project-proposals/vc-dimension.html",
+    "title": "Vapnik–Chervonenkis Dimension",
+    "section": "",
+    "text": "We define a parametric space of stochastic processes (analogous to a feature‑encoding space in supervised learning) so that a stochastic process realization (sample path) is produced by the composition of three stages:\n\nTime vector map that converts raw inputs (e.g., a sequence of heatmap matrices) into a per‑time vector representation.\n\n1‑D temporal wavelet transform applied to each channel of the time vector, producing multiscale, time–frequency localized coefficients.\n\nSequencewise dimensionality reduction (possibly nonlinear, e.g., nonlinear ICA / CEBRA) that maps the multiscale coefficients to a lower‑dimensional sequence representation.\n\nFor more formal exposition refer to the Compute heatmap modelling.\nIn our project, the parametric space of stochastic processes plays the role of a statistical classification model. VC dimension of the model is important as it measures its capacity, which helps to estimate the model’s generalization error. The goal is to find a balance where the model is complex enough to capture the underlying patterns but not so complex that it overfits the data.",
+    "crumbs": [
+      "Task proposals",
+      "VC dimension"
+    ]
+  },
+  {
+    "objectID": "project-proposals/vc-dimension.html#problem-statement",
+    "href": "project-proposals/vc-dimension.html#problem-statement",
+    "title": "Vapnik–Chervonenkis Dimension",
+    "section": "",
+    "text": "We define a parametric space of stochastic processes (analogous to a feature‑encoding space in supervised learning) so that a stochastic process realization (sample path) is produced by the composition of three stages:\n\nTime vector map that converts raw inputs (e.g., a sequence of heatmap matrices) into a per‑time vector representation.\n\n1‑D temporal wavelet transform applied to each channel of the time vector, producing multiscale, time–frequency localized coefficients.\n\nSequencewise dimensionality reduction (possibly nonlinear, e.g., nonlinear ICA / CEBRA) that maps the multiscale coefficients to a lower‑dimensional sequence representation.\n\nFor more formal exposition refer to the Compute heatmap modelling.\nIn our project, the parametric space of stochastic processes plays the role of a statistical classification model. VC dimension of the model is important as it measures its capacity, which helps to estimate the model’s generalization error. The goal is to find a balance where the model is complex enough to capture the underlying patterns but not so complex that it overfits the data.",
+    "crumbs": [
+      "Task proposals",
+      "VC dimension"
+    ]
+  },
+  {
+    "objectID": "project-proposals/vc-dimension.html#suggestions",
+    "href": "project-proposals/vc-dimension.html#suggestions",
+    "title": "Vapnik–Chervonenkis Dimension",
+    "section": "Suggestions",
+    "text": "Suggestions\nThis task is challenging due to the complexity of the model. It requires a rigorous mathematical analysis, which involves proving whether a set of points can be shattered by the hypothesis space. This is non-trivial, and moreover, can be computationally very intensive!",
+    "crumbs": [
+      "Task proposals",
+      "VC dimension"
+    ]
+  },
+  {
+    "objectID": "methodology/tracking.html",
+    "href": "methodology/tracking.html",
+    "title": "Track individual heatmaps",
+    "section": "",
+    "text": "For more detail see Face tracking",
+    "crumbs": [
+      "Methodology",
+      "Track individual heatmaps"
+    ]
+  },
+  {
+    "objectID": "methodology/dbms.html",
+    "href": "methodology/dbms.html",
+    "title": "Store in DBMS",
+    "section": "",
+    "text": "For more details see Time series DB",
+    "crumbs": [
+      "Methodology",
+      "Store in DBMS"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Influence of Art on Brain Activity",
@@ -149,6 +160,108 @@
     "text": "This webpage is dedicated to an innovative research project exploring the profound influence of musical stimuli on brain activity. Specifically, we immerse participants in the experience of full-length lyric operas, harnessing their rich musical and narrative complexity to study how these masterpieces engage the human mind.\nWe hypothesize that changes in skin temperature provide a reliable proxy for the impact of artistic stimuli on brain activity. Using a high-sensitivity thermocamera, we record videos of participants as they experience opera performances. These recordings allow us to track detailed facial heatmaps, capturing physiological responses over the duration of the performance.\nThe goal of this project is to uncover how complete operatic works influence brain activity, helping us identify strong musical triggers and enabling a deeper understanding of the human brain. This research can unlock insights into the cognitive and emotional processes shaped by art and contribute to fields such as neuroscience, psychology, and personalized artistic engagement.\nThe practical applications are wide-ranging. In healthcare, the findings may inspire personalized therapeutic interventions for conditions like stress, anxiety, and rehabilitation. In the realm of show business, they could inform the creation of immersive performances that maximize emotional resonance and audience engagement.",
     "crumbs": [
       "Welcome"
+    ]
+  },
+  {
+    "objectID": "Methodology.html",
+    "href": "Methodology.html",
+    "title": "Methodology",
+    "section": "",
+    "text": "%%| fig-cap: \"Swimlane Diagram: Multimodal Music–Emotion Workflow\"\nflowchart LR\n\n    %% --- Audience Lane ---\n    subgraph AUDIENCE[\"🎭 Heatmap Tracking\"]\n        direction TB\n        A1[\"Track individual heatmaps\"]\n        A2[\"Compute heatmap embeddings\"]\n        A3[\"Extract denoised emotional signals\"]\n    end\n\n    %% --- Audio Lane ---\n    subgraph AUDIO[\"🎵 Audio Embedding\"]\n        direction TB\n        B1[\"Compute synchronized audio embeddings\"]\n        B2[\"Model audio as stochastic process\"]\n    end\n\n    %% --- Model Lane ---\n    subgraph MODEL[\"🧠 Connecting Music and Emotions\"]\n        direction TB\n        C1[\"Implement and train ANN\"]\n        C3[\"Evaluate causal influence\"]\n    end\n\n    %% --- XAI Lane ---\n    subgraph XAI[\"✨ Explainable AI Analysis\"]\n        direction TB\n        D1[\"Apply XAI methods\"]\n        D2[\"Identify influential features\"]\n        D3[\"Interpret emotional influence\"]\n    end\n\n    %% --- Cross‑lane flows ---\n    A3 --&gt; C1\n    B2 --&gt; C1\n    C3 --&gt; D1\n\n    %% --- Styling ---\n    classDef audienceStyle fill:#e8f4ff,stroke:#0277bd,stroke-width:2px,color:#000\n    classDef audioStyle fill:#e8ffe8,stroke:#00796b,stroke-width:2px,color:#000\n    classDef modelStyle fill:#fff9d6,stroke:#f57f17,stroke-width:2px,color:#000\n    classDef xaiStyle fill:#f7e8ff,stroke:#6a1b9a,stroke-width:2px,color:#000\n    classDef nodeStyle fill:#ffffff,stroke:#333,stroke-width:1px,color:#000\n\n    class AUDIENCE audienceStyle\n    class AUDIO audioStyle\n    class MODEL modelStyle\n    class XAI xaiStyle\n    class A1,A2,A3,B1,B2,C1,C3,D1,D2,D3 nodeStyle\n\n\n\n\n\n\n\n\n\n\nTrack individual heatmaps corresponding to individual faces in the audience during the opera\nCalculate embeddings for each tracked heatmap representing stochastic processes\nExtract stochastic processes that minimize noise while preserving emotional information related to emotions during listening\n\n\n\n\n\nCalculate embeddings of the synchronized audio from the opera\nModel the audio embedding as a stochastic process capturing musical features influencing emotions\n\n\n\n\n\nImplement an Artificial Neural Network (ANN) to connect the stochastic processes from audience emotions and music\nTrain the ANN to predict emotions from music features and previous emotional states\nHypothesize causal influence of music on emotions based on prediction accuracy\n\n\n\n\n\nApply explainable AI methods to the trained ANN\nIdentify crucial input features (music or previous emotions) that drive emotion prediction\nGain insights into how music influences emotional responses"
+  },
+  {
+    "objectID": "Methodology.html#methodology",
+    "href": "Methodology.html#methodology",
+    "title": "Methodology",
+    "section": "",
+    "text": "%%| fig-cap: \"Swimlane Diagram: Multimodal Music–Emotion Workflow\"\nflowchart LR\n\n    %% --- Audience Lane ---\n    subgraph AUDIENCE[\"🎭 Heatmap Tracking\"]\n        direction TB\n        A1[\"Track individual heatmaps\"]\n        A2[\"Compute heatmap embeddings\"]\n        A3[\"Extract denoised emotional signals\"]\n    end\n\n    %% --- Audio Lane ---\n    subgraph AUDIO[\"🎵 Audio Embedding\"]\n        direction TB\n        B1[\"Compute synchronized audio embeddings\"]\n        B2[\"Model audio as stochastic process\"]\n    end\n\n    %% --- Model Lane ---\n    subgraph MODEL[\"🧠 Connecting Music and Emotions\"]\n        direction TB\n        C1[\"Implement and train ANN\"]\n        C3[\"Evaluate causal influence\"]\n    end\n\n    %% --- XAI Lane ---\n    subgraph XAI[\"✨ Explainable AI Analysis\"]\n        direction TB\n        D1[\"Apply XAI methods\"]\n        D2[\"Identify influential features\"]\n        D3[\"Interpret emotional influence\"]\n    end\n\n    %% --- Cross‑lane flows ---\n    A3 --&gt; C1\n    B2 --&gt; C1\n    C3 --&gt; D1\n\n    %% --- Styling ---\n    classDef audienceStyle fill:#e8f4ff,stroke:#0277bd,stroke-width:2px,color:#000\n    classDef audioStyle fill:#e8ffe8,stroke:#00796b,stroke-width:2px,color:#000\n    classDef modelStyle fill:#fff9d6,stroke:#f57f17,stroke-width:2px,color:#000\n    classDef xaiStyle fill:#f7e8ff,stroke:#6a1b9a,stroke-width:2px,color:#000\n    classDef nodeStyle fill:#ffffff,stroke:#333,stroke-width:1px,color:#000\n\n    class AUDIENCE audienceStyle\n    class AUDIO audioStyle\n    class MODEL modelStyle\n    class XAI xaiStyle\n    class A1,A2,A3,B1,B2,C1,C3,D1,D2,D3 nodeStyle\n\n\n\n\n\n\n\n\n\n\nTrack individual heatmaps corresponding to individual faces in the audience during the opera\nCalculate embeddings for each tracked heatmap representing stochastic processes\nExtract stochastic processes that minimize noise while preserving emotional information related to emotions during listening\n\n\n\n\n\nCalculate embeddings of the synchronized audio from the opera\nModel the audio embedding as a stochastic process capturing musical features influencing emotions\n\n\n\n\n\nImplement an Artificial Neural Network (ANN) to connect the stochastic processes from audience emotions and music\nTrain the ANN to predict emotions from music features and previous emotional states\nHypothesize causal influence of music on emotions based on prediction accuracy\n\n\n\n\n\nApply explainable AI methods to the trained ANN\nIdentify crucial input features (music or previous emotions) that drive emotion prediction\nGain insights into how music influences emotional responses"
+  },
+  {
+    "objectID": "Methodology.html#expected-outcomes",
+    "href": "Methodology.html#expected-outcomes",
+    "title": "Methodology",
+    "section": "Expected Outcomes",
+    "text": "Expected Outcomes\n\n\n\n\n\n\n\nA robust model linking musical features to emotional reactions\nUnderstanding of temporal dynamics of emotions during live music\nExplainable insights into causal relationships between music and emotions"
+  },
+  {
+    "objectID": "Methodology.html#future-work",
+    "href": "Methodology.html#future-work",
+    "title": "Methodology",
+    "section": "Future Work",
+    "text": "Future Work\n\nExtend to other music genres and live settings\nIncorporate physiological data for multimodal emotion analysis\nRefine models with larger datasets and advanced AI techniques"
+  },
+  {
+    "objectID": "methodology/Methodology.html",
+    "href": "methodology/Methodology.html",
+    "title": "Methodology",
+    "section": "",
+    "text": "%%| fig-cap: \"Swimlane Diagram: Multimodal Music–Emotion Workflow — vertical lanes, all top-down\"\nflowchart TD\n\n  %% --- Audience: Heatmap Tracking (top-down) ---\n  subgraph AUD_TRACK[\"🎭 Heatmap Tracking\"]\n    direction TB\n    A1[\"Track individual heatmaps\"]\n    A1b[(🗄️ Store in a DBMS)]\n  end\n\n  %% --- Audience: Heatmap Embedding (top-down) ---\n  subgraph AUD_EMB[\"🎭 Heatmap Embedding\"]\n    direction TB\n    A2[\"Compute heatmap embeddings\"]\n    A3[\"Extract denoised emotional signals\"]\n  end\n\n  %% --- Audio (top-down) ---\n  subgraph AUDIO[\"🎵 Audio Embedding\"]\n    direction TB\n    B1[\"Model audio as stochastic process\"]\n    B2[\"Compute synchronized audio embeddings\"]\n  end\n\n  %% --- Model (top-down) ---\n  subgraph MODEL[\"🧠 Connecting Music and Emotions\"]\n    direction TB\n    C1[\"Implement and train ANN\"]\n    C2[\"Evaluate causal influence\"]\n  end\n\n  %% --- XAI (top-down) ---\n  subgraph XAI[\"✨ Explainable AI Analysis\"]\n    direction TB\n    D1[\"Apply XAI methods\"]\n    D2[\"Identify influential features\"]\n    D3[\"Interpret emotional influence\"]\n  end\n\n  %% --- Vertical ordering (stacked lanes, top → down) ---\n  %%AUD_TRACK --&gt; AUD_EMB\n  %%AUD_EMB --&gt; AUDIO\n  %%AUDIO --&gt; MODEL\n  %%MODEL --&gt; XAI\n\n  %% --- Internal top-down flows ---\n  A1 --&gt; A1b\n  A1b --&gt; A2\n  A2 --&gt; A3\n  A3 --&gt; C1\n  B1 --&gt; B2\n  B2 --&gt; C1\n  C1 --&gt; C2\n  C2 --&gt; D1\n  D1 --&gt; D2\n  D2 --&gt; D3\n\n  %% --- Styling ---\n  classDef audienceStyle fill:#F8FBFF,stroke:#0277bd,stroke-width:2px,color:#000\n  classDef embStyle fill:#e8f4ff,stroke:#0277bd,stroke-width:2px,color:#000\n  classDef audioStyle fill:#e8ffe8,stroke:#00796b,stroke-width:2px,color:#000\n  classDef modelStyle fill:#fff9d6,stroke:#f57f17,stroke-width:2px,color:#000\n  classDef xaiStyle fill:#f7e8ff,stroke:#6a1b9a,stroke-width:2px,color:#000\n  classDef nodeStyle fill:#ffffff,stroke:#333,stroke-width:1px,color:#000\n\n\n  class AUD_TRACK audienceStyle\n  class AUD_EMB embStyle\n  class AUDIO audioStyle\n  class MODEL modelStyle\n  class XAI xaiStyle\n  class A1,A1b,A2,A3,B1,B2,C1,C2,D1,D2,D3 node",
+    "crumbs": [
+      "Methodology"
+    ]
+  },
+  {
+    "objectID": "methodology/Methodology.html#expected-outcomes",
+    "href": "methodology/Methodology.html#expected-outcomes",
+    "title": "Methodology",
+    "section": "Expected Outcomes",
+    "text": "Expected Outcomes\n\n\n\n\n\n\n\nA robust model linking musical features to emotional reactions\nUnderstanding of temporal dynamics of emotions during live music\nExplainable insights into causal relationships between music and emotions",
+    "crumbs": [
+      "Methodology"
+    ]
+  },
+  {
+    "objectID": "methodology/Methodology.html#future-work",
+    "href": "methodology/Methodology.html#future-work",
+    "title": "Methodology",
+    "section": "Future Work",
+    "text": "Future Work\n\nExtend to other music genres and live settings\nIncorporate physiological data for multimodal emotion analysis\nRefine models with larger datasets and advanced AI techniques",
+    "crumbs": [
+      "Methodology"
+    ]
+  },
+  {
+    "objectID": "methodology/embeddings.html",
+    "href": "methodology/embeddings.html",
+    "title": "Compute heatmap embeddings",
+    "section": "",
+    "text": "Let \\(X\\in\\mathbb{R}^{I\\times J\\times T}\\) denote a time series of facial heatmaps with spatial size \\(I\\times J\\) and temporal length \\(T\\). We consider three operators applied in cascade:\n\nSpatial embedding (framewise)\n\\(\\mathcal{E}:\\mathbb{R}^{I\\times J}\\to\\mathbb{R}^{K}\\), applied to each frame \\(x_t\\), producing \\(\\mathcal{E}(X)\\in\\mathbb{R}^{K\\times T}\\).\nPer‑channel 1D DWT and band reconstruction\n\\(\\Omega:\\mathbb{R}^{K\\times T}\\to\\mathbb{R}^{K\\times T}\\), applying a 1D discrete wavelet transform to each channel, selecting bands, and reconstructing.\nNonlinear ICA / dimensionality reduction\n\\(\\Psi:\\mathbb{R}^{K\\times T}\\to\\mathbb{R}^{L\\times T}\\) with \\(L&lt;K\\), applied framewise or on short windows.\n\nDefine the composed map \\[\nf=\\Psi\\circ\\Omega\\circ\\mathcal{E}\\colon \\mathbb{R}^{I\\times J\\times T}\\to\\mathbb{R}^{L\\times T}\\enspace.\n\\] The function space is \\[\n\\mathcal{F}=\\{\\,f:\\mathbb{R}^{I\\times J\\times T}\\to\\mathbb{R}^{L\\times T}\\mid f=\\Psi\\circ\\Omega\\circ\\mathcal{E}\\ \\text{for admissible }\\mathcal{E},\\Omega,\\Psi\\,\\}.\n\\]",
+    "crumbs": [
+      "Methodology",
+      "Compute heatmap embeddings"
+    ]
+  },
+  {
+    "objectID": "methodology/embeddings.html#function-space-generated-by-the-composition-of-embedding-wavelet-band-reconstruction-and-nonlinear-ica",
+    "href": "methodology/embeddings.html#function-space-generated-by-the-composition-of-embedding-wavelet-band-reconstruction-and-nonlinear-ica",
+    "title": "Compute heatmap embeddings",
+    "section": "",
+    "text": "Let \\(X\\in\\mathbb{R}^{I\\times J\\times T}\\) denote a time series of facial heatmaps with spatial size \\(I\\times J\\) and temporal length \\(T\\). We consider three operators applied in cascade:\n\nSpatial embedding (framewise)\n\\(\\mathcal{E}:\\mathbb{R}^{I\\times J}\\to\\mathbb{R}^{K}\\), applied to each frame \\(x_t\\), producing \\(\\mathcal{E}(X)\\in\\mathbb{R}^{K\\times T}\\).\nPer‑channel 1D DWT and band reconstruction\n\\(\\Omega:\\mathbb{R}^{K\\times T}\\to\\mathbb{R}^{K\\times T}\\), applying a 1D discrete wavelet transform to each channel, selecting bands, and reconstructing.\nNonlinear ICA / dimensionality reduction\n\\(\\Psi:\\mathbb{R}^{K\\times T}\\to\\mathbb{R}^{L\\times T}\\) with \\(L&lt;K\\), applied framewise or on short windows.\n\nDefine the composed map \\[\nf=\\Psi\\circ\\Omega\\circ\\mathcal{E}\\colon \\mathbb{R}^{I\\times J\\times T}\\to\\mathbb{R}^{L\\times T}\\enspace.\n\\] The function space is \\[\n\\mathcal{F}=\\{\\,f:\\mathbb{R}^{I\\times J\\times T}\\to\\mathbb{R}^{L\\times T}\\mid f=\\Psi\\circ\\Omega\\circ\\mathcal{E}\\ \\text{for admissible }\\mathcal{E},\\Omega,\\Psi\\,\\}.\n\\]",
+    "crumbs": [
+      "Methodology",
+      "Compute heatmap embeddings"
+    ]
+  },
+  {
+    "objectID": "methodology/embeddings.html#typical-assumptions",
+    "href": "methodology/embeddings.html#typical-assumptions",
+    "title": "Compute heatmap embeddings",
+    "section": "Typical assumptions",
+    "text": "Typical assumptions\n\nRegularity of \\(\\mathcal{E}\\): linear or smooth (PCA, moments, or differentiable neural embedding).\n\nWavelet properties: \\(\\Omega\\) denotes the 1D discrete wavelet analysis followed by optional subband selection and synthesis. Selecting or zeroing coefficients (i.e., discarding subbands) is a projection in coefficient space and in general destroys invertibility; the reconstructed signal is then the band‑limited approximation obtained from the retained subbands.\nNonlinear ICA identifiability: \\(\\Psi\\) trained with auxiliary/temporal structure enabling identifiability.",
+    "crumbs": [
+      "Methodology",
+      "Compute heatmap embeddings"
+    ]
+  },
+  {
+    "objectID": "methodology/embeddings.html#analytic-and-geometric-properties",
+    "href": "methodology/embeddings.html#analytic-and-geometric-properties",
+    "title": "Compute heatmap embeddings",
+    "section": "Analytic and geometric properties",
+    "text": "Analytic and geometric properties\n\nFinite parameterization: \\(\\mathcal{F}\\) is a finite‑dimensional manifold when operators are finitely parameterized:\n\n\n\nLet \\(\\Theta\\subset\\mathbb{R}^p\\) parameterize the stages \\(\\mathcal{E}_{\\theta_E},\\Omega_{\\theta_\\Omega},\\Psi_{\\theta_\\Psi}\\) and define\n\\[\n\\Phi:\\Theta\\to\\mathcal{M},\\qquad \\Phi(\\theta)=\\Psi_{\\theta_\\Psi}\\circ\\Omega_{\\theta_\\Omega}\\circ\\mathcal{E}_{\\theta_E},\n\\]\nwhere \\(\\mathcal{M}\\) is a Banach space of maps (for example \\(C^0\\) or \\(L^2\\) mappings). The induced function class is the image \\(\\Phi(\\Theta)=\\{f_\\theta:\\theta\\in\\Theta\\}\\subset\\mathcal{M}\\). If \\(\\Phi\\) is \\(C^r\\) and an immersion at \\(\\theta\\), then \\(\\Phi(\\Theta)\\) is a \\(p\\)-dimensional \\(C^r\\) submanifold of \\(\\mathcal{M}\\). Parameter redundancies reduce the effective dimension, and nonparametric or infinite‑width stages may produce infinite‑dimensional families.\n\n\nBand‑limited structure: outputs after \\(\\Omega\\) are localized in time–frequency.\n\n\n\n\n\n\n\nNote\n\n\n\nTime‑localization is useful because it lets you detect, separate, and interpret short, emotion‑related transients (micro‑events) from background noise; it improves denoising, feature extraction, and interpretability for time‑varying facial heatmaps, especially when emotions produce brief thermal signatures.\n\n\n\nDimensionality reduction: effective dimension reduces from \\(K\\times T\\) to \\(L\\times T\\).\n\n\nWe employ a sequencewise encoder \\[\n\\Psi:\\mathbb{R}^{K\\times T}\\to\\mathbb{R}^{L\\times T}\\quad(\\text{or }\\Psi:\\mathbb{R}^{K\\times T}\\to\\mathbb{R}^{L\\times T'}\\ \\text{if temporal downsampling is used}),\n\\] so that the effective spatio‑temporal degrees of freedom are reduced from \\(K\\times T\\) to \\(L\\times T\\) (or \\(L\\times T'\\)). This formulation lets \\(\\Psi\\) exploit temporal dependencies for identifiability and for isolating emotion‑relevant transients while compressing redundant or noisy dimensions.\n\n\nIdentifiability constraints: independence assumptions carve out identifiable latent subspaces.\n\n\n\n\n\n\n\nNote\n\n\n\nIndependence (or conditional‑independence) assumptions are the mechanism that restrict the space of possible latent explanations and thereby make certain nonlinear‑ICA problems identifiable: they “carve out” a subspace (or quotient) of latent solutions that can be uniquely recovered up to trivial indeterminacies.",
+    "crumbs": [
+      "Methodology",
+      "Compute heatmap embeddings"
     ]
   },
   {
@@ -199,47 +312,47 @@
     ]
   },
   {
-    "objectID": "project-proposals/vc-dimension.html",
-    "href": "project-proposals/vc-dimension.html",
-    "title": "Vapnik–Chervonenkis Dimension",
+    "objectID": "project-proposals/time-series-modelling.html",
+    "href": "project-proposals/time-series-modelling.html",
+    "title": "Time Series Modelling",
     "section": "",
-    "text": "We define a parametric space of stochastic processes1 so that a stochastic process realization (sample path) is a result of a composition of a time vector function,2 1D wavelet transform on each chanel of the time vector function, and a (possibly) non-linear dimensionality reduction.3\nIn our project, the parametric space of stochastic processes plays the role of a statistical classification model. VC dimension of the model is important as it measures its capacity, which helps to estimate the model’s generalization error. The goal is to find a balance where the model is complex enough to capture the underlying patterns but not so complex that it overfits the data.",
+    "text": "We propose a hypothesis suggesting a causal association between two stochastic processes, each operating within its own distinct state space with differing dimensions. The first process involves thermocamera video capturing faces, while the second involves music recording.\nThe aim is to estimate the intensity of the causal association by comparing the self-forecasting of the first process with its forecasting that also incorporates insights from the second process. If the latter demonstrates superior performance, it could indicate a causal association between the two processes.1",
     "crumbs": [
       "Task proposals",
-      "VC dimension"
+      "Time series modelling"
     ]
   },
   {
-    "objectID": "project-proposals/vc-dimension.html#problem-statement",
-    "href": "project-proposals/vc-dimension.html#problem-statement",
-    "title": "Vapnik–Chervonenkis Dimension",
+    "objectID": "project-proposals/time-series-modelling.html#problem-statement",
+    "href": "project-proposals/time-series-modelling.html#problem-statement",
+    "title": "Time Series Modelling",
     "section": "",
-    "text": "We define a parametric space of stochastic processes1 so that a stochastic process realization (sample path) is a result of a composition of a time vector function,2 1D wavelet transform on each chanel of the time vector function, and a (possibly) non-linear dimensionality reduction.3\nIn our project, the parametric space of stochastic processes plays the role of a statistical classification model. VC dimension of the model is important as it measures its capacity, which helps to estimate the model’s generalization error. The goal is to find a balance where the model is complex enough to capture the underlying patterns but not so complex that it overfits the data.",
+    "text": "We propose a hypothesis suggesting a causal association between two stochastic processes, each operating within its own distinct state space with differing dimensions. The first process involves thermocamera video capturing faces, while the second involves music recording.\nThe aim is to estimate the intensity of the causal association by comparing the self-forecasting of the first process with its forecasting that also incorporates insights from the second process. If the latter demonstrates superior performance, it could indicate a causal association between the two processes.1",
     "crumbs": [
       "Task proposals",
-      "VC dimension"
+      "Time series modelling"
     ]
   },
   {
-    "objectID": "project-proposals/vc-dimension.html#suggestions",
-    "href": "project-proposals/vc-dimension.html#suggestions",
-    "title": "Vapnik–Chervonenkis Dimension",
+    "objectID": "project-proposals/time-series-modelling.html#suggestions",
+    "href": "project-proposals/time-series-modelling.html#suggestions",
+    "title": "Time Series Modelling",
     "section": "Suggestions",
-    "text": "Suggestions\nThis task is challenging due to the complexity of the model. It requires a rigorous mathematical analysis, which involves proving whether a set of points can be shattered by the hypothesis space. This is non-trivial, and moreover, can be computationally very intensive!",
+    "text": "Suggestions\nWe suggest using a long sequence time forecasting model with a transformer architecture, which has proven effective in handling complex time dependencies in time series data. Specifically, Autoformer and Informer are hot candidates: they are both open source, available on HuggingFace Hub of Git-based repos, and can be relatively easily adapted to our needs.\nNote that causal inference assumes unconfoundedness of the two processes. In general, unconfoundedness is a strong assumption necessary for making causal inferences. However, in our case, it is a reasonable assumption, excluding hidden variables that significantly influence both processes. For example, a potential confounder could be tiredness if it strongly impacts both the opera director/singers/musicians and the audience. In such case, we would need to adjust for it, which is a standard approach in causal inference from observational data.",
     "crumbs": [
       "Task proposals",
-      "VC dimension"
+      "Time series modelling"
     ]
   },
   {
-    "objectID": "project-proposals/vc-dimension.html#footnotes",
-    "href": "project-proposals/vc-dimension.html#footnotes",
-    "title": "Vapnik–Chervonenkis Dimension",
+    "objectID": "project-proposals/time-series-modelling.html#footnotes",
+    "href": "project-proposals/time-series-modelling.html#footnotes",
+    "title": "Time Series Modelling",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nThis function space is analogous to a feature encoding space in a supervised learning.↩︎\nA time vector function may be defined as a result of a discrete 2D wavelet transform applied to heatmap matrices in every time point↩︎\nFor example, a non-linear ICA implemented as CEBRA↩︎",
+    "text": "Footnotes\n\n\nThis is supported by chain rule for entropy: \\(H(X)=I(X;Y)+H(X∣Y)\\), and rests also on the assumption that an opera performance is highly unlikely to be influenced by its audience.↩︎",
     "crumbs": [
       "Task proposals",
-      "VC dimension"
+      "Time series modelling"
     ]
   }
 ]

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Python Example – Sharable documents with Quarto for ML and data science</title>
+<title>Methodology – Sharable documents with Quarto for ML and data science</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,61 +20,28 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c16d2075821f60783b9dd602420178f9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../methodology/tracking.html" rel="next">
+<link href="../index.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-c16d2075821f60783b9dd602420178f9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -102,9 +69,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
-<link rel="stylesheet" href="styles/mermaid-fix.css">
+<link rel="stylesheet" href="../styles/mermaid-fix.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -116,7 +87,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Python Example</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../methodology/Methodology.html">Methodology</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -130,9 +101,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="./images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
     <a href="https://www.iit.it/web/multiscale-brain-communication" title="multiscale-brain-communication" class="quarto-navigation-tool px-1" aria-label="multiscale-brain-communication"><i class="bi bi-globe"></i></a>
@@ -148,34 +119,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Welcome</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./methodology/Methodology.html" class="sidebar-item-text sidebar-link">
+            <a href="../methodology/Methodology.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Methodology</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./methodology/tracking.html" class="sidebar-item-text sidebar-link">
+  <a href="../methodology/tracking.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Track individual heatmaps</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./methodology/dbms.html" class="sidebar-item-text sidebar-link">
+  <a href="../methodology/dbms.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Store in DBMS</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./methodology/embeddings.html" class="sidebar-item-text sidebar-link">
+  <a href="../methodology/embeddings.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Compute heatmap embeddings</span></a>
   </div>
 </li>
@@ -192,31 +163,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./project-proposals/face-tracking.html" class="sidebar-item-text sidebar-link">
+  <a href="../project-proposals/face-tracking.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Face tracking</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./project-proposals/time-series-db.html" class="sidebar-item-text sidebar-link">
+  <a href="../project-proposals/time-series-db.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Time series DB</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./project-proposals/vc-dimension.html" class="sidebar-item-text sidebar-link">
+  <a href="../project-proposals/vc-dimension.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">VC dimension</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./project-proposals/time-series-modelling.html" class="sidebar-item-text sidebar-link">
+  <a href="../project-proposals/time-series-modelling.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Time series modelling</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./project-proposals/explainable-dl.html" class="sidebar-item-text sidebar-link">
+  <a href="../project-proposals/explainable-dl.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Explainable DL</span></a>
   </div>
 </li>
@@ -233,7 +204,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./docs/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../docs/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">nbdev API</span></a>
   </div>
 </li>
@@ -249,16 +220,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#audience-heatmap-tracking" id="toc-audience-heatmap-tracking" class="nav-link active" data-scroll-target="#audience-heatmap-tracking">Audience Heatmap Tracking</a></li>
+  <li><a href="#audio-embedding" id="toc-audio-embedding" class="nav-link" data-scroll-target="#audio-embedding">Audio Embedding</a></li>
+  <li><a href="#connecting-music-and-emotions" id="toc-connecting-music-and-emotions" class="nav-link" data-scroll-target="#connecting-music-and-emotions">Connecting Music and Emotions</a></li>
+  <li><a href="#explainable-ai-analysis" id="toc-explainable-ai-analysis" class="nav-link" data-scroll-target="#explainable-ai-analysis">Explainable AI Analysis</a></li>
+  <li><a href="#expected-outcomes" id="toc-expected-outcomes" class="nav-link" data-scroll-target="#expected-outcomes">Expected Outcomes</a></li>
+  <li><a href="#future-work" id="toc-future-work" class="nav-link" data-scroll-target="#future-work">Future Work</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.dev/rdned/ml-projects/blob/main/python-example.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdned/ml-projects/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/rdned/ml-projects/edit/main/methodology/Methodology.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdned/ml-projects/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Python Example</h1>
+<h1 class="title">Methodology</h1>
+<p class="subtitle lead">Analyzing Music and Emotions Through Audience Response</p>
 </div>
 
 
@@ -275,34 +252,146 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>This example has some Python code that will be a part of our Quarto site.</p>
-<div id="cell-fig-polar" class="cell" data-execution_count="1">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  subplot_kw <span class="op">=</span> {<span class="st">'projection'</span>: <span class="st">'polar'</span>} </span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>ax.plot(theta, r)</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>ax.grid(<span class="va">True</span>)</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
-<div id="fig-polar" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-polar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="python-example_files/figure-html/fig-polar-output-1.png" class="img-fluid figure-img">
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js"> %%| fig-cap: "Swimlane Diagram: Multimodal Music–Emotion Workflow — vertical lanes, all top-down"
+flowchart TD
+
+  %% --- Audience: Heatmap Tracking (top-down) ---
+  subgraph AUD_TRACK["🎭 Heatmap Tracking"]
+    direction TB
+    A1["Track individual heatmaps"]
+    A1b[(🗄️ Store in a DBMS)]
+  end
+
+  %% --- Audience: Heatmap Embedding (top-down) ---
+  subgraph AUD_EMB["🎭 Heatmap Embedding"]
+    direction TB
+    A2["Compute heatmap embeddings"]
+    A3["Extract denoised emotional signals"]
+  end
+
+  %% --- Audio (top-down) ---
+  subgraph AUDIO["🎵 Audio Embedding"]
+    direction TB
+    B1["Model audio as stochastic process"]
+    B2["Compute synchronized audio embeddings"]
+  end
+
+  %% --- Model (top-down) ---
+  subgraph MODEL["🧠 Connecting Music and Emotions"]
+    direction TB
+    C1["Implement and train ANN"]
+    C2["Evaluate causal influence"]
+  end
+
+  %% --- XAI (top-down) ---
+  subgraph XAI["✨ Explainable AI Analysis"]
+    direction TB
+    D1["Apply XAI methods"]
+    D2["Identify influential features"]
+    D3["Interpret emotional influence"]
+  end
+
+  %% --- Vertical ordering (stacked lanes, top → down) ---
+  %%AUD_TRACK --&gt; AUD_EMB
+  %%AUD_EMB --&gt; AUDIO
+  %%AUDIO --&gt; MODEL
+  %%MODEL --&gt; XAI
+
+  %% --- Internal top-down flows ---
+  A1 --&gt; A1b
+  A1b --&gt; A2
+  A2 --&gt; A3
+  A3 --&gt; C1
+  B1 --&gt; B2
+  B2 --&gt; C1
+  C1 --&gt; C2
+  C2 --&gt; D1
+  D1 --&gt; D2
+  D2 --&gt; D3
+
+  %% --- Styling ---
+  classDef audienceStyle fill:#F8FBFF,stroke:#0277bd,stroke-width:2px,color:#000
+  classDef embStyle fill:#e8f4ff,stroke:#0277bd,stroke-width:2px,color:#000
+  classDef audioStyle fill:#e8ffe8,stroke:#00796b,stroke-width:2px,color:#000
+  classDef modelStyle fill:#fff9d6,stroke:#f57f17,stroke-width:2px,color:#000
+  classDef xaiStyle fill:#f7e8ff,stroke:#6a1b9a,stroke-width:2px,color:#000
+  classDef nodeStyle fill:#ffffff,stroke:#333,stroke-width:1px,color:#000
+
+
+  class AUD_TRACK audienceStyle
+  class AUD_EMB embStyle
+  class AUDIO audioStyle
+  class MODEL modelStyle
+  class XAI xaiStyle
+  class A1,A1b,A2,A3,B1,B2,C1,C2,D1,D2,D3 node
+
+</pre>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-polar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: A line plot on a polar axis
-</figcaption>
-</figure>
+<p></p></figure><p></p>
 </div>
 </div>
 </div>
+<hr>
+<section id="audience-heatmap-tracking" class="level3">
+<h3 class="anchored" data-anchor-id="audience-heatmap-tracking">Audience Heatmap Tracking</h3>
+<ul>
+<li>Track individual heatmaps corresponding to individual faces in the audience during the opera</li>
+<li>Calculate embeddings for each tracked heatmap representing stochastic processes</li>
+<li>Extract stochastic processes that minimize noise while preserving emotional information related to emotions during listening</li>
+</ul>
+</section>
+<section id="audio-embedding" class="level3">
+<h3 class="anchored" data-anchor-id="audio-embedding">Audio Embedding</h3>
+<ul>
+<li>Calculate embeddings of the synchronized audio from the opera</li>
+<li>Model the audio embedding as a stochastic process capturing musical features influencing emotions</li>
+</ul>
+</section>
+<section id="connecting-music-and-emotions" class="level3">
+<h3 class="anchored" data-anchor-id="connecting-music-and-emotions">Connecting Music and Emotions</h3>
+<ul>
+<li>Implement an Artificial Neural Network (ANN) to connect the stochastic processes from audience emotions and music</li>
+<li>Train the ANN to predict emotions from music features and previous emotional states</li>
+<li>Hypothesize causal influence of music on emotions based on prediction accuracy</li>
+</ul>
+</section>
+<section id="explainable-ai-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="explainable-ai-analysis">Explainable AI Analysis</h3>
+<ul>
+<li>Apply explainable AI methods to the trained ANN</li>
+<li>Identify crucial input features (music or previous emotions) that drive emotion prediction</li>
+<li>Gain insights into how music influences emotional responses</li>
+</ul>
+</section>
+<section id="expected-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="expected-outcomes">Expected Outcomes</h2>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<ul>
+<li>A robust model linking musical features to emotional reactions</li>
+<li>Understanding of temporal dynamics of emotions during live music</li>
+<li>Explainable insights into causal relationships between music and emotions</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="future-work" class="level2">
+<h2 class="anchored" data-anchor-id="future-work">Future Work</h2>
+<ul>
+<li>Extend to other music genres and live settings</li>
+<li>Incorporate physiological data for multimodal emotion analysis</li>
+<li>Refine models with larger datasets and advanced AI techniques</li>
+</ul>
 
 
 </section>
@@ -708,6 +797,18 @@ Figure&nbsp;1: A line plot on a polar axis
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../index.html" class="pagination-link" aria-label="Welcome">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Welcome</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../methodology/tracking.html" class="pagination-link" aria-label="Track individual heatmaps">
+        <span class="nav-page-text">Track individual heatmaps</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -716,7 +817,7 @@ Figure&nbsp;1: A line plot on a polar axis
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.dev/rdned/ml-projects/blob/main/python-example.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdned/ml-projects/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rdned/ml-projects/edit/main/methodology/Methodology.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdned/ml-projects/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
