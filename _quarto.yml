@@ -34,8 +34,15 @@ website:
     contents:
       - href: index.qmd
         text: Welcome
-      - href: Methodology.qmd  
-        text: Methodology overview
+      - section: Methodology
+        href: methodology/Methodology.qmd
+        contents: 
+          - href: methodology/tracking.qmd  
+            text: Track individual heatmaps
+          - href: methodology/dbms.qmd  
+            text: Store in DBMS
+          - href: methodology/embeddings.qmd  
+            text: Compute heatmap embeddings  
       - section: Task proposals
         contents: 
           - href: project-proposals/face-tracking.md
@@ -59,7 +66,7 @@ format:
     code-copy: true
     code-overflow: wrap
     toc: true
-    css: mermaid-fix.css
+    css: styles/mermaid-fix.css
     mermaid:
       output: svg
       embed: true

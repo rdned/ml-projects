@@ -3,7 +3,7 @@ title: "Methodology"
 subtitle: "Analyzing Music and Emotions Through Audience Response"
 format: html
 toc: true
-css: mermaid-fix.css
+css: ../mermaid-fix.css
 ---
 
 ## Methodology

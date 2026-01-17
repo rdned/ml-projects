@@ -1,0 +1,123 @@
+---
+title: "Methodology"
+subtitle: "Analyzing Music and Emotions Through Audience Response"
+format: html
+toc: true
+css: ../styles/mermaid-fix.css
+---
+
+```{mermaid}
+ %%| fig-cap: "Swimlane Diagram: Multimodal Music–Emotion Workflow — vertical lanes, all top-down"
+flowchart TD
+
+  %% --- Audience: Heatmap Tracking (top-down) ---
+  subgraph AUD_TRACK["🎭 Heatmap Tracking"]
+    direction TB
+    A1["Track individual heatmaps"]
+    A1b[(🗄️ Store in a DBMS)]
+  end
+
+  %% --- Audience: Heatmap Embedding (top-down) ---
+  subgraph AUD_EMB["🎭 Heatmap Embedding"]
+    direction TB
+    A2["Compute heatmap embeddings"]
+    A3["Extract denoised emotional signals"]
+  end
+
+  %% --- Audio (top-down) ---
+  subgraph AUDIO["🎵 Audio Embedding"]
+    direction TB
+    B1["Model audio as stochastic process"]
+    B2["Compute synchronized audio embeddings"]
+  end
+
+  %% --- Model (top-down) ---
+  subgraph MODEL["🧠 Connecting Music and Emotions"]
+    direction TB
+    C1["Implement and train ANN"]
+    C2["Evaluate causal influence"]
+  end
+
+  %% --- XAI (top-down) ---
+  subgraph XAI["✨ Explainable AI Analysis"]
+    direction TB
+    D1["Apply XAI methods"]
+    D2["Identify influential features"]
+    D3["Interpret emotional influence"]
+  end
+
+  %% --- Vertical ordering (stacked lanes, top → down) ---
+  %%AUD_TRACK --> AUD_EMB
+  %%AUD_EMB --> AUDIO
+  %%AUDIO --> MODEL
+  %%MODEL --> XAI
+
+  %% --- Internal top-down flows ---
+  A1 --> A1b
+  A1b --> A2
+  A2 --> A3
+  A3 --> C1
+  B1 --> B2
+  B2 --> C1
+  C1 --> C2
+  C2 --> D1
+  D1 --> D2
+  D2 --> D3
+
+  %% --- Styling ---
+  classDef audienceStyle fill:#F8FBFF,stroke:#0277bd,stroke-width:2px,color:#000
+  classDef embStyle fill:#e8f4ff,stroke:#0277bd,stroke-width:2px,color:#000
+  classDef audioStyle fill:#e8ffe8,stroke:#00796b,stroke-width:2px,color:#000
+  classDef modelStyle fill:#fff9d6,stroke:#f57f17,stroke-width:2px,color:#000
+  classDef xaiStyle fill:#f7e8ff,stroke:#6a1b9a,stroke-width:2px,color:#000
+  classDef nodeStyle fill:#ffffff,stroke:#333,stroke-width:1px,color:#000
+
+
+  class AUD_TRACK audienceStyle
+  class AUD_EMB embStyle
+  class AUDIO audioStyle
+  class MODEL modelStyle
+  class XAI xaiStyle
+  class A1,A1b,A2,A3,B1,B2,C1,C2,D1,D2,D3 node
+
+```
+
+---
+
+
+### Audience Heatmap Tracking
+
+- Track individual heatmaps corresponding to individual faces in the audience during the opera
+- Calculate embeddings for each tracked heatmap representing stochastic processes
+- Extract stochastic processes that minimize noise while preserving emotional information related to emotions during listening
+
+### Audio Embedding
+
+- Calculate embeddings of the synchronized audio from the opera
+- Model the audio embedding as a stochastic process capturing musical features influencing emotions
+
+### Connecting Music and Emotions
+
+- Implement an Artificial Neural Network (ANN) to connect the stochastic processes from audience emotions and music
+- Train the ANN to predict emotions from music features and previous emotional states
+- Hypothesize causal influence of music on emotions based on prediction accuracy
+
+### Explainable AI Analysis
+
+- Apply explainable AI methods to the trained ANN
+- Identify crucial input features (music or previous emotions) that drive emotion prediction
+- Gain insights into how music influences emotional responses
+
+## Expected Outcomes
+
+::: {.callout-note appearance="minimal"}
+- A robust model linking musical features to emotional reactions
+- Understanding of temporal dynamics of emotions during live music
+- Explainable insights into causal relationships between music and emotions
+:::
+
+## Future Work
+
+- Extend to other music genres and live settings
+- Incorporate physiological data for multimodal emotion analysis
+- Refine models with larger datasets and advanced AI techniques

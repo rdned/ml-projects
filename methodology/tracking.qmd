@@ -1,0 +1,6 @@
+---
+title: "Track individual heatmaps"
+format: html
+---
+
+For more detail see [Face tracking](../project-proposals/face-tracking.md)

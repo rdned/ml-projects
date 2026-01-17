@@ -7,7 +7,13 @@ draft: false
 
 ## Problem Statement
 
-We define a parametric space of stochastic processes^[This function space is analogous to a feature encoding space in a supervised learning.] so that a *stochastic process realization* (*sample path*) is a result of a composition of a time vector function,^[A time vector function may be defined as a result of a discrete 2D wavelet transform applied to heatmap matrices in every time point] 1D wavelet transform on each chanel of the time vector function, and a (possibly) non-linear dimensionality reduction.^[For example, a non-linear ICA implemented as [*CEBRA*](https://cebra.ai)]
+We define a **parametric space of stochastic processes** (analogous to a feature‑encoding space in supervised learning) so that a *stochastic process realization* (sample path) is produced by the composition of three stages:
+
+- **Time vector map** that converts raw inputs (e.g., a sequence of heatmap matrices) into a per‑time vector representation.  
+- **1‑D temporal wavelet transform** applied to each channel of the time vector, producing multiscale, time–frequency localized coefficients.  
+- **Sequencewise dimensionality reduction** (possibly nonlinear, e.g., nonlinear ICA / [*CEBRA*](https://cebra.ai)) that maps the multiscale coefficients to a lower‑dimensional sequence representation.
+
+For more formal exposition refer to the [Compute heatmap modelling](../methodology/embeddings.qmd).
 
 In our project, the parametric space of stochastic processes plays the role of a *statistical classification model*. VC dimension of the model is important as it measures its capacity, which helps to estimate the model's *generalization error*. The goal is to find a balance where the model is complex enough to capture the underlying patterns but not so complex that it overfits the data.
 
