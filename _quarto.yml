@@ -43,6 +43,9 @@ website:
             text: Store in DBMS
           - href: methodology/embeddings.qmd  
             text: Compute heatmap embeddings  
+          - href: methodology/esignal.qmd  
+            text: Extract denoised emotional signals  
+  
       - section: Task proposals
         contents: 
           - href: project-proposals/face-tracking.md

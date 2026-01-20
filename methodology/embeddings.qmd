@@ -1,7 +1,9 @@
 ---
 title: "Compute heatmap embeddings"
+author: Radim Nedbal
 format:
   html:
+    toc: true
     css: ../styles/mermaid-fix.css
   pdf: default
 execute:
