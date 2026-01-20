@@ -2,50 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://rdned.github.io/ml-projects/project-proposals/time-series-db.html</loc>
-    <lastmod>2026-01-17T00:08:00.212Z</lastmod>
+    <lastmod>2026-01-20T01:33:22.985Z</lastmod>
   </url>
   <url>
     <loc>https://rdned.github.io/ml-projects/project-proposals/face-tracking.html</loc>
-    <lastmod>2026-01-17T00:08:00.212Z</lastmod>
+    <lastmod>2026-01-20T01:33:22.985Z</lastmod>
   </url>
   <url>
     <loc>https://rdned.github.io/ml-projects/project-proposals/vc-dimension.html</loc>
-    <lastmod>2026-01-17T00:08:00.212Z</lastmod>
+    <lastmod>2026-01-20T01:33:22.985Z</lastmod>
   </url>
   <url>
     <loc>https://rdned.github.io/ml-projects/methodology/tracking.html</loc>
-    <lastmod>2026-01-17T00:08:00.211Z</lastmod>
+    <lastmod>2026-01-20T01:33:22.985Z</lastmod>
   </url>
   <url>
     <loc>https://rdned.github.io/ml-projects/methodology/dbms.html</loc>
-    <lastmod>2026-01-17T00:08:00.211Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdned.github.io/ml-projects/index.html</loc>
-    <lastmod>2026-01-17T00:08:00.211Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdned.github.io/ml-projects/Methodology.html</loc>
-    <lastmod>2026-01-17T00:08:00.208Z</lastmod>
+    <lastmod>2026-01-20T01:33:22.984Z</lastmod>
   </url>
   <url>
     <loc>https://rdned.github.io/ml-projects/methodology/Methodology.html</loc>
-    <lastmod>2026-01-17T00:08:00.211Z</lastmod>
+    <lastmod>2026-01-20T01:33:22.984Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdned.github.io/ml-projects/Methodology.html</loc>
+    <lastmod>2026-01-20T01:33:22.982Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdned.github.io/ml-projects/index.html</loc>
+    <lastmod>2026-01-20T01:33:22.984Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdned.github.io/ml-projects/methodology/esignal.html</loc>
+    <lastmod>2026-01-20T01:33:22.985Z</lastmod>
   </url>
   <url>
     <loc>https://rdned.github.io/ml-projects/methodology/embeddings.html</loc>
-    <lastmod>2026-01-17T00:08:00.211Z</lastmod>
+    <lastmod>2026-01-20T01:33:22.984Z</lastmod>
   </url>
   <url>
     <loc>https://rdned.github.io/ml-projects/python-example.html</loc>
-    <lastmod>2026-01-17T00:08:00.212Z</lastmod>
+    <lastmod>2026-01-20T01:33:22.986Z</lastmod>
   </url>
   <url>
     <loc>https://rdned.github.io/ml-projects/project-proposals/explainable-dl.html</loc>
-    <lastmod>2026-01-17T00:08:00.212Z</lastmod>
+    <lastmod>2026-01-20T01:33:22.985Z</lastmod>
   </url>
   <url>
     <loc>https://rdned.github.io/ml-projects/project-proposals/time-series-modelling.html</loc>
-    <lastmod>2026-01-17T00:08:00.212Z</lastmod>
+    <lastmod>2026-01-20T01:33:22.985Z</lastmod>
   </url>
 </urlset>
