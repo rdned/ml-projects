@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://rdned.github.io/nbdevtest/index.html</loc>
-    <lastmod>2026-01-20T15:04:06.211Z</lastmod>
+    <loc>https://rdned.github.io/nbdev_fhemb/index.html</loc>
+    <lastmod>2026-01-29T17:51:43.178Z</lastmod>
   </url>
   <url>
-    <loc>https://rdned.github.io/nbdevtest/core.html</loc>
-    <lastmod>2026-01-20T15:04:06.265Z</lastmod>
+    <loc>https://rdned.github.io/nbdev_fhemb/core.html</loc>
+    <lastmod>2026-01-29T17:51:43.187Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdned.github.io/nbdev_fhemb/tfreq.html</loc>
+    <lastmod>2026-02-04T20:28:11.347Z</lastmod>
   </url>
 </urlset>

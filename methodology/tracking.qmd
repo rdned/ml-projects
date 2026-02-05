@@ -5,4 +5,4 @@ format: html
 
 For more detail see [Face tracking](../project-proposals/face-tracking.md)
 
-{{< include ../docs/core.html.md >}}
+{{< include ../docs/tfreq.html.md >}}
