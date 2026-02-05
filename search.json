@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "docs/core.html.html",
+    "href": "docs/core.html.html",
+    "title": "core",
+    "section": "",
+    "text": "core\n\n\n\nfoo\n\ndef foo(\n    \n):"
+  },
+  {
     "objectID": "project-proposals/time-series-db.html",
     "href": "project-proposals/time-series-db.html",
     "title": "Time Series Database",
@@ -125,7 +132,7 @@
     "href": "methodology/tracking.html",
     "title": "Track individual heatmaps",
     "section": "",
-    "text": "For more detail see Face tracking",
+    "text": "For more detail see Face tracking\n\ncore\n\n\n\nfoo\n\ndef foo(\n    \n):",
     "crumbs": [
       "Methodology",
       "Track individual heatmaps"
@@ -147,7 +154,7 @@
     "href": "methodology/Methodology.html",
     "title": "Methodology",
     "section": "",
-    "text": "%%| fig-cap: \"Swimlane Diagram: Multimodal Music–Emotion Workflow — vertical lanes, all top-down\"\nflowchart TD\n\n  %% --- Audience: Heatmap Tracking (top-down) ---\n  subgraph AUD_TRACK[\"🎭 Heatmap Tracking\"]\n    direction TB\n    A1[\"Track individual heatmaps\"]\n    A1b[(🗄️ Store in a DBMS)]\n  end\n\n  %% --- Audience: Heatmap Embedding (top-down) ---\n  subgraph AUD_EMB[\"🎭 Heatmap Embedding\"]\n    direction TB\n    A2[\"Compute heatmap embeddings\"]\n    A3[\"Extract denoised emotional signals\"]\n  end\n\n  %% --- Audio (top-down) ---\n  subgraph AUDIO[\"🎵 Audio Embedding\"]\n    direction TB\n    B1[\"Model audio as stochastic process\"]\n    B2[\"Compute synchronized audio embeddings\"]\n  end\n\n  %% --- Model (top-down) ---\n  subgraph MODEL[\"🧠 Connecting Music and Emotions\"]\n    direction TB\n    C1[\"Implement and train ANN\"]\n    C2[\"Evaluate causal influence\"]\n  end\n\n  %% --- XAI (top-down) ---\n  subgraph XAI[\"✨ Explainable AI Analysis\"]\n    direction TB\n    D1[\"Apply XAI methods\"]\n    D2[\"Identify influential features\"]\n    D3[\"Interpret emotional influence\"]\n  end\n\n  %% --- Vertical ordering (stacked lanes, top → down) ---\n  %%AUD_TRACK --&gt; AUD_EMB\n  %%AUD_EMB --&gt; AUDIO\n  %%AUDIO --&gt; MODEL\n  %%MODEL --&gt; XAI\n\n  %% --- Internal top-down flows ---\n  A1 --&gt; A1b\n  A1b --&gt; A2\n  A2 --&gt; A3\n  A3 --&gt; C1\n  B1 --&gt; B2\n  B2 --&gt; C1\n  C1 --&gt; C2\n  C2 --&gt; D1\n  D1 --&gt; D2\n  D2 --&gt; D3\n\n  %% --- Styling ---\n  classDef audienceStyle fill:#F8FBFF,stroke:#0277bd,stroke-width:2px,color:#000\n  classDef embStyle fill:#e8f4ff,stroke:#0277bd,stroke-width:2px,color:#000\n  classDef audioStyle fill:#e8ffe8,stroke:#00796b,stroke-width:2px,color:#000\n  classDef modelStyle fill:#fff9d6,stroke:#f57f17,stroke-width:2px,color:#000\n  classDef xaiStyle fill:#f7e8ff,stroke:#6a1b9a,stroke-width:2px,color:#000\n  classDef nodeStyle fill:#ffffff,stroke:#333,stroke-width:1px,color:#000\n\n\n  class AUD_TRACK audienceStyle\n  class AUD_EMB embStyle\n  class AUDIO audioStyle\n  class MODEL modelStyle\n  class XAI xaiStyle\n  class A1,A1b,A2,A3,B1,B2,C1,C2,D1,D2,D3 node",
+    "text": "%%| fig-cap: \"Swimlane Diagram: Multimodal Music–Emotion Workflow — vertical lanes, all top-down\"\nflowchart TD\n\n  %% --- Audience: Heatmap Tracking (top-down) ---\n  subgraph AUD_TRACK[\"🎭 Heatmap Tracking\"]\n    direction TB\n    A1[\"Track individual heatmaps\"]\n    A1b[(🗄️ Store in a DBMS)]\n  end\n\n  %% --- Audience: Heatmap Embedding (top-down) ---\n  subgraph AUD_EMB[\"🎭 Heatmap Embedding\"]\n    direction TB\n    A2[\"Compute heatmap embeddings\"]\n    A3[\"Extract denoised emotional signals\"]\n  end\n\n  %% --- Audio (top-down) ---\n  subgraph AUDIO[\"🎵 Audio Embedding\"]\n    direction TB\n    B1[\"Model audio as stochastic process\"]\n    B2[\"Compute synchronized audio embeddings\"]\n  end\n\n  %% --- Model (top-down) ---\n  subgraph MODEL[\"🧠 Music &lt;--&gt; Emotions\"]\n    direction TB\n    C1[\"Implement and train ANN\"]\n    C2[\"Evaluate causal influence\"]\n  end\n\n  %% --- XAI (top-down) ---\n  subgraph XAI[\"✨ Explainable AI Analysis\"]\n    direction TB\n    D1[\"Apply XAI methods\"]\n    D2[\"Identify influential features\"]\n    D3[\"Interpret emotional influence\"]\n  end\n\n  %% --- Vertical ordering (stacked lanes, top → down) ---\n  %%AUD_TRACK --&gt; AUD_EMB\n  %%AUD_EMB --&gt; AUDIO\n  %%AUDIO --&gt; MODEL\n  %%MODEL --&gt; XAI\n\n  %% --- Internal top-down flows ---\n  A1 --&gt; A1b\n  A1b --&gt; A2\n  A2 --&gt; A3\n  A3 --&gt; C1\n  B1 --&gt; B2\n  B2 --&gt; C1\n  C1 --&gt; C2\n  C2 --&gt; D1\n  D1 --&gt; D2\n  D2 --&gt; D3\n\n  %% --- Styling ---\n  classDef audienceStyle fill:#F8FBFF,stroke:#0277bd,stroke-width:2px,color:#000\n  classDef embStyle fill:#e8f4ff,stroke:#0277bd,stroke-width:2px,color:#000\n  classDef audioStyle fill:#e8ffe8,stroke:#00796b,stroke-width:2px,color:#000\n  classDef modelStyle fill:#fff9d6,stroke:#f57f17,stroke-width:2px,color:#000\n  classDef xaiStyle fill:#f7e8ff,stroke:#6a1b9a,stroke-width:2px,color:#000\n  classDef nodeStyle fill:#ffffff,stroke:#333,stroke-width:1px,color:#000\n\n\n  class AUD_TRACK audienceStyle\n  class AUD_EMB embStyle\n  class AUDIO audioStyle\n  class MODEL modelStyle\n  class XAI xaiStyle\n  class A1,A1b,A2,A3,B1,B2,C1,C2,D1,D2,D3 node",
     "crumbs": [
       "Methodology"
     ]
@@ -365,5 +372,33 @@
       "Task proposals",
       "Time series modelling"
     ]
+  },
+  {
+    "objectID": "docs/index.html.html",
+    "href": "docs/index.html.html",
+    "title": "nbdevtest",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation.\n\n\nIf you are new to using nbdev here are some useful pointers to get you started.\n\n\n# make sure nbdevtest package is installed in development mode\n$ pip install -e .\n\n# make changes under nbs/ directory\n# ...\n\n# compile to have changes apply to nbdevtest\n$ nbdev_prepare\n\n\n\n\n\n\nInstall latest from the GitHub repository:\n$ pip install git+https://github.com/rdned/nbdevtest.git\nor from conda\n$ conda install -c rdned nbdevtest\nor from pypi\n$ pip install nbdevtest\n\n\n\nDocumentation can be found hosted on this GitHub repository’s pages. Additionally you can find package manager specific guidelines on conda and pypi respectively.\n\n\n\n\nFill me in please! Don’t forget code examples:\n1+1\n2"
+  },
+  {
+    "objectID": "docs/index.html.html#developer-guide",
+    "href": "docs/index.html.html#developer-guide",
+    "title": "nbdevtest",
+    "section": "",
+    "text": "If you are new to using nbdev here are some useful pointers to get you started.\n\n\n# make sure nbdevtest package is installed in development mode\n$ pip install -e .\n\n# make changes under nbs/ directory\n# ...\n\n# compile to have changes apply to nbdevtest\n$ nbdev_prepare"
+  },
+  {
+    "objectID": "docs/index.html.html#usage",
+    "href": "docs/index.html.html#usage",
+    "title": "nbdevtest",
+    "section": "",
+    "text": "Install latest from the GitHub repository:\n$ pip install git+https://github.com/rdned/nbdevtest.git\nor from conda\n$ conda install -c rdned nbdevtest\nor from pypi\n$ pip install nbdevtest\n\n\n\nDocumentation can be found hosted on this GitHub repository’s pages. Additionally you can find package manager specific guidelines on conda and pypi respectively."
+  },
+  {
+    "objectID": "docs/index.html.html#how-to-use",
+    "href": "docs/index.html.html#how-to-use",
+    "title": "nbdevtest",
+    "section": "",
+    "text": "Fill me in please! Don’t forget code examples:\n1+1\n2"
   }
 ]
