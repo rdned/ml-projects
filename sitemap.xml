@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://rdned.github.io/ml-projects/docs/core.html.html</loc>
-    <lastmod>2026-02-05T00:57:27.053Z</lastmod>
+    <loc>https://rdned.github.io/ml-projects/docs/index.html</loc>
+    <lastmod>2026-02-05T01:50:23.989Z</lastmod>
   </url>
   <url>
     <loc>https://rdned.github.io/ml-projects/project-proposals/time-series-db.html</loc>
-    <lastmod>2026-02-05T00:57:27.061Z</lastmod>
+    <lastmod>2026-02-05T01:50:23.997Z</lastmod>
   </url>
   <url>
     <loc>https://rdned.github.io/ml-projects/project-proposals/face-tracking.html</loc>
-    <lastmod>2026-02-05T00:57:27.061Z</lastmod>
+    <lastmod>2026-02-05T01:50:23.997Z</lastmod>
   </url>
   <url>
     <loc>https://rdned.github.io/ml-projects/project-proposals/vc-dimension.html</loc>
-    <lastmod>2026-02-05T00:57:27.061Z</lastmod>
+    <lastmod>2026-02-05T01:50:23.997Z</lastmod>
   </url>
   <url>
-    <loc>https://rdned.github.io/ml-projects/methodology/tracking.html</loc>
-    <lastmod>2026-02-05T00:57:27.061Z</lastmod>
+    <loc>https://rdned.github.io/ml-projects/methodology/tfreq.html</loc>
+    <lastmod>2026-02-05T01:50:23.997Z</lastmod>
   </url>
   <url>
     <loc>https://rdned.github.io/ml-projects/methodology/dbms.html</loc>
-    <lastmod>2026-02-05T00:57:27.061Z</lastmod>
+    <lastmod>2026-02-05T01:50:23.997Z</lastmod>
   </url>
   <url>
     <loc>https://rdned.github.io/ml-projects/methodology/Methodology.html</loc>
-    <lastmod>2026-02-05T00:57:27.061Z</lastmod>
+    <lastmod>2026-02-05T01:50:23.997Z</lastmod>
   </url>
   <url>
     <loc>https://rdned.github.io/ml-projects/Methodology.html</loc>
-    <lastmod>2026-02-05T00:57:27.052Z</lastmod>
+    <lastmod>2026-02-05T01:50:23.989Z</lastmod>
   </url>
   <url>
     <loc>https://rdned.github.io/ml-projects/index.html</loc>
-    <lastmod>2026-02-05T00:57:27.060Z</lastmod>
+    <lastmod>2026-02-05T01:50:23.997Z</lastmod>
   </url>
   <url>
     <loc>https://rdned.github.io/ml-projects/methodology/esignal.html</loc>
-    <lastmod>2026-02-05T00:57:27.061Z</lastmod>
+    <lastmod>2026-02-05T01:50:23.997Z</lastmod>
   </url>
   <url>
     <loc>https://rdned.github.io/ml-projects/methodology/embeddings.html</loc>
-    <lastmod>2026-02-05T00:57:27.061Z</lastmod>
+    <lastmod>2026-02-05T01:50:23.997Z</lastmod>
   </url>
   <url>
     <loc>https://rdned.github.io/ml-projects/python-example.html</loc>
-    <lastmod>2026-02-05T00:57:27.062Z</lastmod>
+    <lastmod>2026-02-05T01:50:23.998Z</lastmod>
   </url>
   <url>
     <loc>https://rdned.github.io/ml-projects/project-proposals/explainable-dl.html</loc>
-    <lastmod>2026-02-05T00:57:27.061Z</lastmod>
+    <lastmod>2026-02-05T01:50:23.997Z</lastmod>
   </url>
   <url>
     <loc>https://rdned.github.io/ml-projects/project-proposals/time-series-modelling.html</loc>
-    <lastmod>2026-02-05T00:57:27.061Z</lastmod>
+    <lastmod>2026-02-05T01:50:23.997Z</lastmod>
   </url>
   <url>
-    <loc>https://rdned.github.io/ml-projects/docs/index.html.html</loc>
-    <lastmod>2026-02-05T00:57:27.053Z</lastmod>
+    <loc>https://rdned.github.io/ml-projects/docs/tfreq.html</loc>
+    <lastmod>2026-02-05T01:50:23.993Z</lastmod>
   </url>
 </urlset>

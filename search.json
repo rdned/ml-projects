@@ -1,10 +1,47 @@
 [
   {
-    "objectID": "docs/core.html.html",
-    "href": "docs/core.html.html",
-    "title": "core",
+    "objectID": "docs/index.html",
+    "href": "docs/index.html",
+    "title": "nbdev_fhemb",
     "section": "",
-    "text": "core\n\n\n\nfoo\n\ndef foo(\n    \n):"
+    "text": "This file will become your README and also the index of your documentation.",
+    "crumbs": [
+      "API Documentation",
+      "nbdev API"
+    ]
+  },
+  {
+    "objectID": "docs/index.html#developer-guide",
+    "href": "docs/index.html#developer-guide",
+    "title": "nbdev_fhemb",
+    "section": "Developer Guide",
+    "text": "Developer Guide\nIf you are new to using nbdev here are some useful pointers to get you started.\n\nInstall nbdev_fhemb in Development mode\n# make sure nbdev_fhemb package is installed in development mode\n$ pip install -e .\n\n# make changes under nbs/ directory\n# ...\n\n# compile to have changes apply to nbdev_fhemb\n$ nbdev_prepare",
+    "crumbs": [
+      "API Documentation",
+      "nbdev API"
+    ]
+  },
+  {
+    "objectID": "docs/index.html#usage",
+    "href": "docs/index.html#usage",
+    "title": "nbdev_fhemb",
+    "section": "Usage",
+    "text": "Usage\n\nInstallation\nInstall latest from the GitHub repository:\n$ pip install git+https://github.com/rdned/nbdev_fhemb.git\nor from conda\n$ conda install -c rdned nbdev_fhemb\nor from pypi\n$ pip install nbdev_fhemb\n\n\nDocumentation\nDocumentation can be found hosted on this GitHub repository’s pages. Additionally you can find package manager specific guidelines on conda and pypi respectively.",
+    "crumbs": [
+      "API Documentation",
+      "nbdev API"
+    ]
+  },
+  {
+    "objectID": "docs/index.html#how-to-use",
+    "href": "docs/index.html#how-to-use",
+    "title": "nbdev_fhemb",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2",
+    "crumbs": [
+      "API Documentation",
+      "nbdev API"
+    ]
   },
   {
     "objectID": "project-proposals/time-series-db.html",
@@ -128,11 +165,22 @@
     ]
   },
   {
-    "objectID": "methodology/tracking.html",
-    "href": "methodology/tracking.html",
-    "title": "Track individual heatmaps",
+    "objectID": "methodology/tfreq.html",
+    "href": "methodology/tfreq.html",
+    "title": "Frequency Analysis of Temporal Series",
     "section": "",
-    "text": "For more detail see Face tracking\n\ncore\n\n\n\nfoo\n\ndef foo(\n    \n):",
+    "text": "For more detail see Face tracking",
+    "crumbs": [
+      "Methodology",
+      "Track individual heatmaps"
+    ]
+  },
+  {
+    "objectID": "methodology/tfreq.html#piece-instances-to-analyze",
+    "href": "methodology/tfreq.html#piece-instances-to-analyze",
+    "title": "Frequency Analysis of Temporal Series",
+    "section": "Piece instances to analyze",
+    "text": "Piece instances to analyze\n\ndg0.face_t.project(features=['skew'], subjs=[65], fbands=[0,1,2], wdfactory=wfactory('db4',8)).plot_signal(subjs=[65])\n\n\n\n\n\n\n\n\n(&lt;Figure size 1200x200 with 1 Axes&gt;,\n [&lt;Axes: title={'center': \"subj65: Frequency interval [(0, 0.2)] Hz, period interval [(5.12, 'inf')] s\"}&gt;])\n\n\n\ndg0.face_t.project(\n    subjs=[65],\n    features=['kurtosis', 'skew'],\n    fbands=[0,1,2,3],\n    wdfactory=wfactory('db4',8),\n    pcfactory=pca2,\n).plot_lagged_correlations(\n    twin=250,\n    step=25,\n    max_lag=250,\n    n_jobs=8\n)",
     "crumbs": [
       "Methodology",
       "Track individual heatmaps"
@@ -374,31 +422,17 @@
     ]
   },
   {
-    "objectID": "docs/index.html.html",
-    "href": "docs/index.html.html",
-    "title": "nbdevtest",
+    "objectID": "docs/tfreq.html",
+    "href": "docs/tfreq.html",
+    "title": "Frequency Analysis of Temporal Series",
     "section": "",
-    "text": "This file will become your README and also the index of your documentation.\n\n\nIf you are new to using nbdev here are some useful pointers to get you started.\n\n\n# make sure nbdevtest package is installed in development mode\n$ pip install -e .\n\n# make changes under nbs/ directory\n# ...\n\n# compile to have changes apply to nbdevtest\n$ nbdev_prepare\n\n\n\n\n\n\nInstall latest from the GitHub repository:\n$ pip install git+https://github.com/rdned/nbdevtest.git\nor from conda\n$ conda install -c rdned nbdevtest\nor from pypi\n$ pip install nbdevtest\n\n\n\nDocumentation can be found hosted on this GitHub repository’s pages. Additionally you can find package manager specific guidelines on conda and pypi respectively.\n\n\n\n\nFill me in please! Don’t forget code examples:\n1+1\n2"
+    "text": "dg0.face_t.project(features=['skew'], subjs=[65], fbands=[0,1,2], wdfactory=wfactory('db4',8)).plot_signal(subjs=[65])\n\n\n\n\n\n\n\n\n(&lt;Figure size 1200x200 with 1 Axes&gt;,\n [&lt;Axes: title={'center': \"subj65: Frequency interval [(0, 0.2)] Hz, period interval [(5.12, 'inf')] s\"}&gt;])\n\n\n\ndg0.face_t.project(\n    subjs=[65],\n    features=['kurtosis', 'skew'],\n    fbands=[0,1,2,3],\n    wdfactory=wfactory('db4',8),\n    pcfactory=pca2,\n).plot_lagged_correlations(\n    twin=250,\n    step=25,\n    max_lag=250,\n    n_jobs=8\n)"
   },
   {
-    "objectID": "docs/index.html.html#developer-guide",
-    "href": "docs/index.html.html#developer-guide",
-    "title": "nbdevtest",
+    "objectID": "docs/tfreq.html#piece-instances-to-analyze",
+    "href": "docs/tfreq.html#piece-instances-to-analyze",
+    "title": "Frequency Analysis of Temporal Series",
     "section": "",
-    "text": "If you are new to using nbdev here are some useful pointers to get you started.\n\n\n# make sure nbdevtest package is installed in development mode\n$ pip install -e .\n\n# make changes under nbs/ directory\n# ...\n\n# compile to have changes apply to nbdevtest\n$ nbdev_prepare"
-  },
-  {
-    "objectID": "docs/index.html.html#usage",
-    "href": "docs/index.html.html#usage",
-    "title": "nbdevtest",
-    "section": "",
-    "text": "Install latest from the GitHub repository:\n$ pip install git+https://github.com/rdned/nbdevtest.git\nor from conda\n$ conda install -c rdned nbdevtest\nor from pypi\n$ pip install nbdevtest\n\n\n\nDocumentation can be found hosted on this GitHub repository’s pages. Additionally you can find package manager specific guidelines on conda and pypi respectively."
-  },
-  {
-    "objectID": "docs/index.html.html#how-to-use",
-    "href": "docs/index.html.html#how-to-use",
-    "title": "nbdevtest",
-    "section": "",
-    "text": "Fill me in please! Don’t forget code examples:\n1+1\n2"
+    "text": "dg0.face_t.project(features=['skew'], subjs=[65], fbands=[0,1,2], wdfactory=wfactory('db4',8)).plot_signal(subjs=[65])\n\n\n\n\n\n\n\n\n(&lt;Figure size 1200x200 with 1 Axes&gt;,\n [&lt;Axes: title={'center': \"subj65: Frequency interval [(0, 0.2)] Hz, period interval [(5.12, 'inf')] s\"}&gt;])\n\n\n\ndg0.face_t.project(\n    subjs=[65],\n    features=['kurtosis', 'skew'],\n    fbands=[0,1,2,3],\n    wdfactory=wfactory('db4',8),\n    pcfactory=pca2,\n).plot_lagged_correlations(\n    twin=250,\n    step=25,\n    max_lag=250,\n    n_jobs=8\n)"
   }
 ]
